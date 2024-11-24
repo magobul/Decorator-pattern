@@ -12,7 +12,7 @@ namespace Decorator_pattern
 
         public override void Send(string message)
         {
-            base.Send(message); // Отправляем через базовый notifier
+            base.Send(message);
             Console.WriteLine($"Отправка SMS: {message}");
         }
     }
@@ -23,7 +23,7 @@ namespace Decorator_pattern
 
         public override void Send(string message)
         {
-            base.Send(message); // Отправляем через базовый notifier
+            base.Send(message);
             Console.WriteLine($"Отправка Facebook сообщения: {message}");
         }
     }
